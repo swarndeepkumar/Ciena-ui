@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -13,9 +14,12 @@ import { MenuComponent } from './menus/menu/menu.component';
 import { MenuItemComponent } from './menus/menu-item/menu-item.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SettingsComponent } from './settings/settings.component';
-import { CountriesComponent } from './countries/countries.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routing';
+import { CountryDetailComponent } from './country-detail/country-detail.component';
+import { CountryListComponent } from './country-list/country-list.component';
+import { PopupMenuComponent } from './menus/popup-menu/popup-menu.component';
+import { CountryMaintComponent } from './country-maint/country-maint.component';
 
 @NgModule({
   declarations: [
@@ -31,10 +35,14 @@ import { appRoutes } from './app.routing';
     MenuItemComponent,
     DashboardComponent,
     SettingsComponent,
-    CountriesComponent
+    CountryDetailComponent,
+    CountryListComponent,
+    PopupMenuComponent,
+    CountryMaintComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
