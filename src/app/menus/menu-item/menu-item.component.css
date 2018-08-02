@@ -7,7 +7,7 @@
     padding: 0;
     font-size: 15px;
     line-height: 15px;
-    color: #666;
+    color: #FFFFFF;
     cursor: pointer;
     box-sizing: border-box;
     width: 100%;
@@ -47,14 +47,14 @@ span {
     padding: 6px 6px 6px 0;
 }
 .menu-item:hover{
-    background-color: #dfd;
+    background-color: #007FE2;
 }
 .menu-item.vertical-menu:hover{
-    background-color: green;
+    background-color: #354351;
 }
 .router-link-active {
-    background-color: #dfd;
+    background-color: #007FE2;
 }
 .router-link-active.vertical-menu {
-    background-color: green;
+    background-color: #354351;
 }

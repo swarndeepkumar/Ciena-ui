@@ -3,7 +3,7 @@ export let initialMenuItems: Array<MenuItem> = [
     {
         text: 'Dashboard',
         icon: 'fa fa-tachometer fa-4x',
-        route: 'dashboard',
+        route: 'authenticated/dashboard',
         submenu: null
     },
     {
@@ -19,19 +19,19 @@ export let initialMenuItems: Array<MenuItem> = [
                     {
                         text: 'USA',
                         icon: 'fa fa-globe fa-4x',
-                        route: 'country-detail/USA',
+                        route: 'authenticated/country-detail/USA',
                         submenu: null
                     },
                     {
                         text: 'Bharat',
                         icon: 'fa fa-globe fa-4x',
-                        route: 'country-detail/Bharat',
+                        route: 'authenticated/country-detail/Bharat',
                         submenu: null
                     },
                     {
                         text: 'Switzerland',
                         icon: 'fa fa-globe fa-4x',
-                        route: 'country-detail/Switzerland',
+                        route: 'authenticated/country-detail/Switzerland',
                         submenu: null
                     }
                 ]
@@ -39,19 +39,19 @@ export let initialMenuItems: Array<MenuItem> = [
             {
                 text: 'Top 3',
                 icon: 'fa fa-cogs fa-4x',
-                route: 'country-list/3',
+                route: 'authenticated/country-list/3',
                 submenu: null
             },
             {
                 text: 'Top 10',
                 icon: 'fa fa-cogs fa-4x',
-                route: 'country-list/10',
+                route: 'authenticated/country-list/10',
                 submenu: null
             },
             {
                 text: 'All',
                 icon: 'fa fa-cogs fa-4x',
-                route: 'country-list/0',
+                route: 'authenticated/country-list/0',
                 submenu: null
             }
             
@@ -65,13 +65,13 @@ export let initialMenuItems: Array<MenuItem> = [
             {
                 text: 'Country List',
                 icon: 'fa fa-list-ol fa-4x',
-                route: 'country-maint',
+                route: 'authenticated/country-maint',
                 submenu: null
             },
             {
                 text: 'Settings',
                 icon: 'fa fa-cogs fa-4x',
-                route: 'settings',
+                route: 'authenticated/settings',
                 submenu: null
             }
         ]

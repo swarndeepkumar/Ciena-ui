@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
@@ -20,6 +21,11 @@ import { CountryDetailComponent } from './country-detail/country-detail.componen
 import { CountryListComponent } from './country-list/country-list.component';
 import { PopupMenuComponent } from './menus/popup-menu/popup-menu.component';
 import { CountryMaintComponent } from './country-maint/country-maint.component';
+import { AuthenticatedUserComponent } from './authenticated-user/authenticated-user.component';
+import { SignInComponent } from './users/sign-in/sign-in.component';
+import { RegisterUserComponent } from './users/register-user/register-user.component';
+import { UserApi } from './users/user-api';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -38,14 +44,20 @@ import { CountryMaintComponent } from './country-maint/country-maint.component';
     CountryDetailComponent,
     CountryListComponent,
     PopupMenuComponent,
-    CountryMaintComponent
+    CountryMaintComponent,
+    AuthenticatedUserComponent,
+    SignInComponent,
+    RegisterUserComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    {provide: UserApi, useExisting: UserService}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
