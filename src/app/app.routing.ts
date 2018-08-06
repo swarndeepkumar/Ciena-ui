@@ -8,7 +8,7 @@ import { SignInComponent } from './users/sign-in/sign-in.component';
 import { AuthenticatedUserComponent } from './authenticated-user/authenticated-user.component';
 import { RegisterUserComponent } from './users/register-user/register-user.component';
 import { AuthGuardService } from './services/auth-guard.service';
-import { from } from 'rxjs';
+
 
 export const appRoutes: Routes = [
     { path: 'signin', component: SignInComponent },
@@ -20,7 +20,7 @@ export const appRoutes: Routes = [
                 { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
                 { path: 'dashboard', component: DashboardComponent },
                 { path: 'country-list/:count', component: CountryListComponent },
-                { path: 'country-detail/:country', component: CountryDetailComponent },
+                { path: 'country-detail/:id/:operation', component: CountryDetailComponent },
                 { path: 'country-maint', component: CountryMaintComponent },
                 { path: 'settings', component: SettingsComponent },
             ]
